@@ -75,6 +75,9 @@ header span {
 
 input[type=button] {
     appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    opacity: 1;
     height: 3rem;
     padding: 10px;
     margin-bottom: 10px;
