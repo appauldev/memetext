@@ -3,15 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memetext</title>
-    <script src="main.js"></script>
+    <title>Mocking Meme</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <div class="main-form">
-        <label for="inputText">Input text</label>
-        <input type="text" name="inputText" id="inputText">
-        <input type="button" value="Memefy" onclick="Memefy()">
-        <input type="text" name="resultText" id="resultText">
+        <header>
+            <h1 id="app-title">Memetext</h1>
+            <h2>Amateur Web Dev Skills + GitHub Pages + Pandemic = spOngebob mEme mocking tExt wEbApp</h2>
+            <span>🤪🥴🥱</span>
+           <div id="instructions">
+                <p>Instructions:</p>
+                <p>1. Type in your text below.</p>
+                <p>2. Click the Memefy button to process your text.</p>
+                <p>3. Use the other buttons to copy or clear the mocking texts.</p>
+                <p>4. Have fun!!!</p>
+                <p>Please note that this webapp is not yet optimized which means you may encounter bugs while using it.<br>You can raise issues <a href="https://github.com/appauldev/mocking-text/issues" target="_blank">here.</a></p>
+           </div>
+        </header>
+        <div class="input-group">
+            <input type="text" name="inputText" id="inputText" placeholder="Input your text here">
+        </div>
+
+        <textarea type="text" name="textarea-result" id="textarea-result" placeholder="" readonly ></textarea>
+        <input type="button" id="btn-Memefy" value="" onclick="Memefy()">
+        <div class="secondary-buttons">
+            <input type="button" id="btn-Clear" value="Clear" onclick="ClearInputField()">
+            <input type="button" id="btn-Copy" value="Copy" onclick="CopyMemefiedText()">
+        </div>
+        <img src="https://media.giphy.com/media/QUXYcgCwvCm4cKcrI3/giphy.gif" alt="spongebob mocking meme GIF">
     </div>
+
+    <hr>
+
+    <footer class="flex-footer">
+        <p>By appauldev (2020)</p>
+        <a href="https://github.com/appauldev/mocking-text/">GitHub Repo</a>
+    </footer>
 </body>
+<script src="main.js"></script>
 </html>

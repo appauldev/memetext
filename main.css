@@ -1,0 +1,180 @@
+* {
+    /* outline: 1px solid red; */
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    color: #bd94d4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-color: rgb(35, 28, 39);
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(230, 100, 53);
+}
+
+a:hover {
+    color: rgb(255, 148, 109);
+}
+
+hr {
+    width: 100%;
+    border: 1px solid rgb(189, 148, 212);
+}
+
+header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-bottom: 0rem;
+}
+
+header h1 {
+    font-size:4rem;
+    margin-bottom: .5rem;
+    margin-top: 0px;
+    text-align: center;
+    line-height: 4rem;
+}
+
+header h2 {
+    margin-top: 0px;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+header span {
+    font-size: xx-large;
+}
+
+#instructions > p {
+    margin: 0.5rem 0;
+}
+
+
+input[type=button] {
+    appearance: none;
+    height: 3rem;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(230, 100, 53);
+    color: white;
+    font-size: 1rem;
+}
+
+input[type=text], textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 7px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type=text] {
+    margin-bottom: 0px;
+
+}
+
+textarea {
+    height: 10rem;
+    resize: none;
+}
+
+#btn-Memefy:hover {
+    background-color: rgb(230, 119, 78);
+    font-weight: 700;
+}
+
+#btn-Memefy:active {
+    background-color: #863f25;
+    font-weight: 700
+}
+
+#btn-Copy {
+    background-color: rgb(148, 115, 167);
+    margin-left: 0.5rem;
+}
+
+#btn-Clear {
+    background-color: rgb(148, 115, 167);
+    margin-right: 0.5rem;
+    
+}
+
+#btn-Copy:hover, #btn-Clear:hover {
+    background-color: rgb(194, 156, 216);
+}
+
+#btn-Copy:active, #btn-Clear:active {
+    background-color: rgb(123, 73, 151);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    width: 21rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+
+}
+
+.secondary-buttons {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.secondary-buttons > * {
+    flex: 1 30%;
+}
+
+.flex-footer {
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 1rem;
+}
+
+.flex-footer p {
+    margin: 0px;
+}
+
+.flex-footer a {
+    text-align: center;
+}
+
+@media only screen and (max-width: 370px) {
+    .main-form {
+        width: 17rem;
+    }
+
+    header h1 {
+        font-size:3.5rem;
+    }
+}
